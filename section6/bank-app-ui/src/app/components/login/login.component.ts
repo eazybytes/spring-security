@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
     this.loginService.validateLoginDetails(this.model).subscribe(
       responseData => {
         this.model = <any> responseData.body;
-        
         this.model.authStatus = 'AUTH';
         window.sessionStorage.setItem("userdetails",JSON.stringify(this.model));
         let xsrf = getCookie('XSRF-TOKEN')!;

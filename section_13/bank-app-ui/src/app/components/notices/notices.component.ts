@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Cards } from 'src/app/model/cards.model';
 import { DashboardService } from 'src/app/services/dashboard/dashboard.service';
 
 @Component({

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.eazybytes.model.AccountTransactions;
 
 @Repository
-public interface AccountTransactionsRepository extends CrudRepository<AccountTransactions, Long> {
+public interface AccountTransactionsRepository extends CrudRepository<AccountTransactions, String> {
 	
 	List<AccountTransactions> findByCustomerIdOrderByTransactionDtDesc(int customerId);
 

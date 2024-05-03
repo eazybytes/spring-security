@@ -2,7 +2,7 @@ package com.eazybytes.controller;
 
 import com.eazybytes.model.Customer;
 import com.eazybytes.repository.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 public class LoginController {
 
-    @Autowired
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
 
     @RequestMapping("/user")
     public Customer getUserDetailsAfterLogin(Authentication authentication) {

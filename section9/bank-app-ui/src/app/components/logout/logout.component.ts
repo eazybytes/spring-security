@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/services/login/login.service';
 import { Router } from '@angular/router';
 import { User } from 'src/app/model/user.model';
 
@@ -18,6 +17,7 @@ export class LogoutComponent implements OnInit {
   ngOnInit(): void {
     window.sessionStorage.setItem("userdetails","");
     window.sessionStorage.setItem("XSRF-TOKEN","");
+    window.sessionStorage.setItem("Authorization","");
     this.router.navigate(['/login']);
   }
 

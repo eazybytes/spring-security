@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.eazybytes.model.Accounts;
 
 @Repository
-public interface AccountsRepository extends CrudRepository<Accounts, Long> {
+public interface AccountsRepository extends CrudRepository<Accounts, Integer> {
 	
 	Accounts findByCustomerId(int customerId);
 

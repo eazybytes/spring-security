@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-public class EazyBankUserDetails implements UserDetailsService {
+
+public class EazyBankUserDetails  {
 
     @Autowired
     private CustomerRepository customerRepository;
 
-    @Override
+
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         String userName, password;
         List<GrantedAuthority> authorities;

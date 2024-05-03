@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.eazybytes.model.Loans;
 
 @Repository
-public interface LoanRepository extends CrudRepository<Loans, Long> {
+public interface LoanRepository extends CrudRepository<Loans, Integer> {
 
 	// @PreAuthorize("hasRole('USER')")
 	List<Loans> findByCustomerIdOrderByStartDtDesc(int customerId);

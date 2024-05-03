@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
@@ -37,42 +38,25 @@ public class ProjectSecurityConfig {
      */
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
     /*@Bean
-    public InMemoryUserDetailsManager userDetailsService() {
-        *//*Approach 1 where we use withDefaultPasswordEncoder() method
-		while creating the user details*//*
-        *//*UserDetails admin = User.withDefaultPasswordEncoder()
-                .username("admin")
-                .password("12345")
-                .authorities("admin")
-                .build();
-        UserDetails user = User.withDefaultPasswordEncoder()
-                .username("user")
-                .password("12345")
-                .authorities("read")
-                .build();
-        return new InMemoryUserDetailsManager(admin, user);*//*
-
-         *//*Approach 2 where we use NoOpPasswordEncoder Bean
-		while creating the user details*//*
-        UserDetails admin = User.withUsername("admin")
-                .password("12345")
-                .authorities("admin")
-                .build();
+    public UserDetailsService userDetailsService() {
         UserDetails user = User.withUsername("user")
-                .password("12345")
+                .password("{noop}12345")
                 .authorities("read")
                 .build();
-        return new InMemoryUserDetailsManager(admin, user);
-
+        UserDetails admin = User.withUsername("admin")
+                .password("{bcrypt}$2a$12$v/X62C2bs.UrdI41uqHS/e1KgYR9i0KzMsNUKLrZok00QRwUWS1VW")
+                .authorities("admin")
+                .build();
+        return new InMemoryUserDetailsManager(user, admin);
     }*/
 
-    /*@Bean
+    @Bean
     public UserDetailsService userDetailsService(DataSource dataSource) {
         return new JdbcUserDetailsManager(dataSource);
-    }*/
+    }
 
 }

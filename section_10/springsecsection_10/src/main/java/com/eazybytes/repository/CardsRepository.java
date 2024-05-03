@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.eazybytes.model.Cards;
 
 @Repository
-public interface CardsRepository extends CrudRepository<Cards, Long> {
+public interface CardsRepository extends CrudRepository<Cards, Integer> {
 	
 	List<Cards> findByCustomerId(int customerId);
 

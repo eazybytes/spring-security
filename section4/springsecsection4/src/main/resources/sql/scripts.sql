@@ -27,4 +27,4 @@ CREATE TABLE `customer` (
 );
 
 INSERT INTO `customer` (`email`, `pwd`, `role`)
- VALUES ('johndoe@example.com', '54321', 'admin');
+ VALUES ('johndoe@example.com', '{noop}54321', 'admin');

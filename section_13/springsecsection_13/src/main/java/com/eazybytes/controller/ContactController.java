@@ -2,7 +2,7 @@ package com.eazybytes.controller;
 
 import com.eazybytes.model.Contact;
 import com.eazybytes.repository.ContactRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PostFilter;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,10 +14,10 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
+@RequiredArgsConstructor
 public class ContactController {
 
-    @Autowired
-    private ContactRepository contactRepository;
+    private final ContactRepository contactRepository;
 
     @PostMapping("/contact")
     /*@PreFilter("filterObject.contactName != 'Test'")*/
@@ -35,6 +35,6 @@ public class ContactController {
     public String getServiceReqNumber() {
         Random random = new Random();
         int ranNum = random.nextInt(999999999 - 9999) + 9999;
-        return "SR"+ranNum;
+        return "SR" + ranNum;
     }
 }
