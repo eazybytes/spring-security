@@ -1,5 +1,6 @@
 package com.eazybytes.config;
 
+import com.eazybytes.entrypoint.CustomBasicAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -15,12 +16,14 @@ public class ProjectSecurityConfig {
         /**
          *  Below is the custom security configurations
          */
-
         http.authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/myAccount","/myBalance","/myLoans","/myCards").authenticated()
-                        .requestMatchers("/notices","/contact").permitAll())
+                        .requestMatchers("/notices","/contact", "/error").permitAll())
+                /*.formLogin(formLoginConfig -> formLoginConfig.disable())
+                .httpBasic(httpBasicCofig -> httpBasicCofig.disable());*/
                 .formLogin(Customizer.withDefaults())
-                .httpBasic(Customizer.withDefaults());
+                .httpBasic(hbc -> hbc.authenticationEntryPoint(
+                        new CustomBasicAuthenticationEntryPoint()));
         return http.build();
 
         /**

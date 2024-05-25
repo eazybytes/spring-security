@@ -1,7 +1,9 @@
 package com.eazybytes.config;
 
+import com.eazybytes.exceptionhandling.CustomBasicAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,16 +12,21 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
+@Profile("!prod")
 public class ProjectSecurityConfig {
 
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf((csrf) -> csrf.disable())
+        http.requiresChannel(rcc -> rcc.anyRequest().requiresInsecure())
+                .sessionManagement(sessionConfig -> sessionConfig.invalidSessionUrl("/invalidSession")
+                        .maximumSessions(5).maxSessionsPreventsLogin(true))
+                .csrf((csrf) -> csrf.disable())
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/myAccount", "/myBalance", "/myLoans", "/myCards").authenticated()
-                        .requestMatchers("/notices", "/contact", "/register").permitAll())
+                        .requestMatchers("/notices", "/contact", "/register","/invalidSession", "/error").permitAll())
                 .formLogin(Customizer.withDefaults())
-                .httpBasic(Customizer.withDefaults());
+                .httpBasic(hbc -> hbc.authenticationEntryPoint(
+                        new CustomBasicAuthenticationEntryPoint()));
         return http.build();
     }
 

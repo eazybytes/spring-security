@@ -1,7 +1,6 @@
 package com.eazybytes.config;
 
 import com.eazybytes.model.Authority;
-import com.eazybytes.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -23,9 +22,8 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class EazyBankUsernamePwdAuthenticationProvider implements AuthenticationProvider {
 
-    private final CustomerRepository customerRepository;
-    private final PasswordEncoder passwordEncoder;
     private final UserDetailsService userDetailsService;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {

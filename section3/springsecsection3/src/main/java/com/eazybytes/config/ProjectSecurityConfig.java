@@ -51,6 +51,10 @@ public class ProjectSecurityConfig {
                 .password("{bcrypt}$2a$12$v/X62C2bs.UrdI41uqHS/e1KgYR9i0KzMsNUKLrZok00QRwUWS1VW")
                 .authorities("admin")
                 .build();
+
+                Try the demo of below methods as well
+                .accountExpired(false)
+                .disabled(true)
         return new InMemoryUserDetailsManager(user, admin);
     }*/
 
