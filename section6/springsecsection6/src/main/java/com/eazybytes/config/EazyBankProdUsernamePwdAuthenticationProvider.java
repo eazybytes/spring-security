@@ -13,9 +13,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("!prod")
+@Profile("prod")
 @RequiredArgsConstructor
-public class EazyBankUsernamePwdAuthenticationProvider implements AuthenticationProvider {
+public class EazyBankProdUsernamePwdAuthenticationProvider implements AuthenticationProvider {
 
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
@@ -25,7 +25,12 @@ public class EazyBankUsernamePwdAuthenticationProvider implements Authentication
         String username = authentication.getName();
         String pwd = authentication.getCredentials().toString();
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-        return new UsernamePasswordAuthenticationToken(username,pwd,userDetails.getAuthorities());
+        if (passwordEncoder.matches(pwd, userDetails.getPassword())) {
+            // Fetch Age details and perform validation to check if age >18
+            return new UsernamePasswordAuthenticationToken(username,pwd,userDetails.getAuthorities());
+        }else {
+            throw new BadCredentialsException("Invalid password!");
+        }
     }
 
     @Override
