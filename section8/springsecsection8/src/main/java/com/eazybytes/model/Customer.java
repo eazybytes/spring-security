@@ -5,17 +5,17 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.GenericGenerator;
 
-import java.util.Set;
+import java.sql.Date;
 
 @Entity
 @Getter @Setter
 public class Customer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
-    private int id;
+    private long id;
 
     private String name;
 
@@ -30,10 +30,7 @@ public class Customer {
     private String role;
 
     @Column(name = "create_dt")
-    private String createDt;
-
     @JsonIgnore
-    @OneToMany(mappedBy="customer",fetch=FetchType.EAGER)
-    private Set<Authority> authorities;
+    private Date createDt;
 
 }
