@@ -33,9 +33,8 @@
 - Spring Website - https://spring.io/
 - Spring Projects website - https://spring.io/projects
 - Spring Boot properties - https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
-- AWS website - https://aws.amazon.com/
 - SQLECTRON website - https://sqlectron.github.io
-- Free MySQL DB website - https://www.freemysqlhosting.net
+- Online Bcrypt generator  - https://bcrypt-generator.com
 - OAuth2 Website - https://oauth.net/2/
 - OAuth2 playground - https://www.oauth.com/playground/
 - KeyCloak website - https://www.keycloak.org
