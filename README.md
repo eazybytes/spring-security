@@ -33,8 +33,10 @@
 - Spring Website - https://spring.io/
 - Spring Projects website - https://spring.io/projects
 - Spring Boot properties - https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
-- SQLECTRON website - https://sqlectron.github.io
 - Online Bcrypt generator  - https://bcrypt-generator.com
+- Docker website - https://www.docker.com/
+- SQLECTRON website - https://sqlectron.github.io
+- Warp terminal website - https://www.warp.dev/
 - OAuth2 Website - https://oauth.net/2/
 - OAuth2 playground - https://www.oauth.com/playground/
 - KeyCloak website - https://www.keycloak.org
@@ -45,3 +47,9 @@
 - Angular Keycloak library - https://www.npmjs.com/package/keycloak-angular
 - Keycloak official documentation - https://www.keycloak.org/documentation
 - Keycloak Admin REST APIs - https://www.keycloak.org/docs-api/19.0.2/rest-api/index.html
+
+## Commands used in the course
+
+|     Command       |     Description          |
+| ------------- | ------------- |
+| "docker run -p 3306:3306 --name springsecurity -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=eazybank -d mysql" | To create a MySQL DB container |
