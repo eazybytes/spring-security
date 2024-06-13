@@ -7,12 +7,14 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.sql.Date;
+
 @Entity
 @Getter @Setter
 public class Accounts {
 
 	@Column(name = "customer_id")
-	private int customerId;
+	private long customerId;
 
 	@Id
 	@Column(name="account_number")
@@ -25,6 +27,6 @@ public class Accounts {
 	private String branchAddress;
 
 	@Column(name = "create_dt")
-	private String createDt;
+	private Date createDt;
 	
 }

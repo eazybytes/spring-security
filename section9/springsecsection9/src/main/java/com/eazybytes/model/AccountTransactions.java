@@ -23,7 +23,7 @@ public class AccountTransactions {
 	private long accountNumber;
 	
 	@Column(name = "customer_id")
-	private int customerId;
+	private long customerId;
 	
 	@Column(name="transaction_dt")
 	private Date transactionDt;
@@ -41,6 +41,6 @@ public class AccountTransactions {
 	private int closingBalance;
 	
 	@Column(name = "create_dt")
-	private String createDt;
+	private Date createDt;
 
 }

@@ -1,9 +1,5 @@
-create database eazybank;
-
-use eazybank;
-
-drop table `users`;
 drop table `authorities`;
+drop table `users`;
 drop table `customer`;
 
 CREATE TABLE `customer` (
@@ -18,7 +14,7 @@ CREATE TABLE `customer` (
 );
 
 INSERT INTO `customer` (`name`,`email`,`mobile_number`, `pwd`, `role`,`create_dt`)
- VALUES ('Happy','happy@example.com','9876548337', '{bcrypt}$2y$12$oRRbkNfwuR8ug4MlzH5FOeui.//1mkd.RsOAJMbykTSupVy.x/vb2', 'admin',CURDATE());
+ VALUES ('Happy','happy@example.com','5334122365', '{bcrypt}$2a$12$88.f6upbBvy0okEa7OfHFuorV29qeK.sVbB9VQ6J6dWM1bW6Qef8m', 'admin',CURDATE());
 
 CREATE TABLE `accounts` (
   `customer_id` int NOT NULL,
@@ -187,7 +183,7 @@ INSERT INTO `authorities` (`customer_id`, `name`)
  INSERT INTO `authorities` (`customer_id`, `name`)
    VALUES (1, 'VIEWBALANCE');
 
- DELETE FROM `authorities`;
+DELETE FROM `authorities`;
 
  INSERT INTO `authorities` (`customer_id`, `name`)
   VALUES (1, 'ROLE_USER');

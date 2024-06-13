@@ -16,10 +16,10 @@ public class Loans {
 
     @Id
     @Column(name = "loan_number")
-    private int loanNumber;
+    private long loanNumber;
 
     @Column(name = "customer_id")
-    private int customerId;
+    private long customerId;
 
     @Column(name = "start_dt")
     private Date startDt;
@@ -37,6 +37,6 @@ public class Loans {
     private int outstandingAmount;
 
     @Column(name = "create_dt")
-    private String createDt;
+    private Date createDt;
 
 }
