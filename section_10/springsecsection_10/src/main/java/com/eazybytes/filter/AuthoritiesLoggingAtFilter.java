@@ -1,20 +1,24 @@
 package com.eazybytes.filter;
 
 import jakarta.servlet.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
+@Slf4j
 public class AuthoritiesLoggingAtFilter implements Filter {
-
-    private final Logger LOG =
-            Logger.getLogger(AuthoritiesLoggingAtFilter.class.getName());
-
+    /**
+     * @param request  The request to process
+     * @param response The response associated with the request
+     * @param chain    Provides access to the next filter in the chain for this filter to pass the request and response
+     *                 to for further processing
+     * @throws IOException
+     * @throws ServletException
+     */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-        LOG.info("Authentication Validation is in progress");
-        chain.doFilter(request, response);
+        log.info("Authentication Validation is in progress");
+        chain.doFilter(request,response);
     }
-
 }

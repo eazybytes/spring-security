@@ -10,6 +10,6 @@ import com.eazybytes.model.AccountTransactions;
 @Repository
 public interface AccountTransactionsRepository extends CrudRepository<AccountTransactions, String> {
 	
-	List<AccountTransactions> findByCustomerIdOrderByTransactionDtDesc(int customerId);
+	List<AccountTransactions> findByCustomerIdOrderByTransactionDtDesc(long customerId);
 
 }

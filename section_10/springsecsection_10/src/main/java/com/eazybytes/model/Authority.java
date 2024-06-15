@@ -6,16 +6,17 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name = "authorities")
+@Table(name="authorities")
 public class Authority {
 
     @Id
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name="customer_id")
     private Customer customer;
 
 }
