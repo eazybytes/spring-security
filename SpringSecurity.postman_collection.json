@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "83b8a41d-188d-44bd-b7b7-8dff1fdc728a",
+		"_postman_id": "66ee11bd-d24b-4313-a0cc-a5ce2419a8a6",
 		"name": "SpringSecurity",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1599575"
@@ -13,35 +13,43 @@
 					"name": "GetWelcome_Request1",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "eazybytes",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "12345",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/welcome",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/welcome",
 							"path": [
 								"welcome"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -55,13 +63,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "eazybytes",
+									"key": "password",
+									"value": "12345",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "eazybytes",
 									"type": "string"
 								}
 							]
@@ -69,12 +77,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount",
 							"path": [
 								"myAccount"
 							]
@@ -103,12 +106,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance",
 							"path": [
 								"myBalance"
 							]
@@ -137,12 +135,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans",
 							"path": [
 								"myLoans"
 							]
@@ -171,12 +164,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards",
 							"path": [
 								"myCards"
 							]
@@ -193,12 +181,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -215,18 +198,38 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -241,12 +244,12 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "54321",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "johndoe@example.com",
+									"value": "user",
 									"type": "string"
 								}
 							]
@@ -254,12 +257,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount",
 							"path": [
 								"myAccount"
 							]
@@ -274,13 +272,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "54321",
+									"key": "username",
+									"value": "user",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "johndoe@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -288,12 +286,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance",
 							"path": [
 								"myBalance"
 							]
@@ -308,13 +301,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "54321",
+									"key": "username",
+									"value": "user",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "johndoe@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -322,12 +315,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans",
 							"path": [
 								"myLoans"
 							]
@@ -342,13 +330,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "54321",
+									"key": "username",
+									"value": "user",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "johndoe@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -356,12 +344,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards",
 							"path": [
 								"myCards"
 							]
@@ -378,12 +361,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -400,12 +378,187 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Section4",
+			"item": [
+				{
+					"name": "myAccount",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myAccount",
+							"path": [
+								"myAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myBalance",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myBalance",
+							"path": [
+								"myBalance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myLoans",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myLoans",
+							"path": [
+								"myLoans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myCards",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myCards",
+							"path": [
+								"myCards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/notices",
+							"path": [
+								"notices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
@@ -423,7 +576,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"email\": \"sam@example.com\",\n        \"pwd\": \"12345\",\n        \"role\": \"user\"\n}",
+							"raw": "{\n    \"email\": \"john@example.com\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -431,12 +584,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/register",
 							"path": [
 								"register"
 							]
@@ -444,75 +592,30 @@
 					},
 					"response": []
 				}
-			]
-		},
-		{
-			"name": "Section4",
-			"item": [
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
 				{
-					"name": "register_BcryptDemo",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"email\": \"john@example.com\",\n        \"pwd\": \"12345\",\n        \"role\": \"user\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"register"
-							]
-						}
-					},
-					"response": []
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				},
 				{
-					"name": "myAccount_BcryptDemo",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "12345",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "john@example.com",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/myAccount",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"myAccount"
-							]
-						}
-					},
-					"response": []
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -526,13 +629,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "smith@example.com",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "john@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -540,12 +643,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount",
 							"path": [
 								"myAccount"
 							]
@@ -560,13 +658,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "john@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -574,12 +672,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance",
 							"path": [
 								"myBalance"
 							]
@@ -594,13 +687,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "john@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -608,12 +701,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans",
 							"path": [
 								"myLoans"
 							]
@@ -628,13 +716,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "user",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "john@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -642,12 +730,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards",
 							"path": [
 								"myCards"
 							]
@@ -664,12 +747,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -686,12 +764,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
@@ -709,7 +782,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"email\": \"sam@example.com\",\n        \"pwd\": \"12345\",\n        \"role\": \"user\"\n}",
+							"raw": "{\n    \"email\": \"smith@example.com\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"admin\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -717,18 +790,38 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/register",
 							"path": [
 								"register"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -743,12 +836,12 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "smith@example.com",
 									"type": "string"
 								}
 							]
@@ -756,20 +849,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount",
 							"path": [
 								"myAccount"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -783,12 +865,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -796,20 +878,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance",
 							"path": [
 								"myBalance"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -823,12 +894,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -836,20 +907,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans",
 							"path": [
 								"myLoans"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -863,12 +923,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "user",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -876,20 +936,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards",
 							"path": [
 								"myCards"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -904,12 +953,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -923,24 +967,10 @@
 						"auth": {
 							"type": "noauth"
 						},
-						"method": "POST",
+						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
@@ -958,7 +988,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"12345\",\n    \"role\": \"user\"\n}",
+							"raw": "{\n    \"email\": \"smith@example.com\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"admin\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -966,18 +996,38 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/register",
 							"path": [
 								"register"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -991,13 +1041,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "smith@example.com",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "happy@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1005,20 +1055,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount",
 							"path": [
 								"myAccount"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -1032,12 +1071,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1045,20 +1084,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance",
 							"path": [
 								"myBalance"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -1072,12 +1100,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1085,20 +1113,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans",
 							"path": [
 								"myLoans"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -1112,12 +1129,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "user",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1125,20 +1142,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards",
 							"path": [
 								"myCards"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -1153,12 +1159,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -1172,11 +1173,28 @@
 						"auth": {
 							"type": "noauth"
 						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/contact",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
+							"raw": "{\n    \"email\": \"smith@example.com\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"admin\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1184,18 +1202,38 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/register",
 							"path": [
-								"contact"
+								"register"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -1209,13 +1247,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "12345",
+									"key": "username",
+									"value": "smith@example.com",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "happy@example.com",
+									"key": "password",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1223,12 +1261,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myAccount?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount?id=1",
 							"path": [
 								"myAccount"
 							],
@@ -1250,12 +1283,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1263,12 +1296,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance?id=1",
 							"path": [
 								"myBalance"
 							],
@@ -1290,12 +1318,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "john@example.com",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1303,12 +1331,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans?id=1",
 							"path": [
 								"myLoans"
 							],
@@ -1330,12 +1353,12 @@
 							"basic": [
 								{
 									"key": "username",
-									"value": "happy@example.com",
+									"value": "user",
 									"type": "string"
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1343,12 +1366,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards?id=1",
 							"path": [
 								"myCards"
 							],
@@ -1371,12 +1389,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -1391,7 +1404,12 @@
 							"type": "noauth"
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
@@ -1402,18 +1420,93 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/register",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -1421,7 +1514,7 @@
 			"name": "Section9",
 			"item": [
 				{
-					"name": "GetJWTToken",
+					"name": "myAccount",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -1433,7 +1526,7 @@
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1441,40 +1534,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/user",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"user"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "myAccount",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/myAccount?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount?id=1",
 							"path": [
 								"myAccount"
 							],
@@ -1492,23 +1552,24 @@
 					"name": "myBalance",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myBalance?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance?id=1",
 							"path": [
 								"myBalance"
 							],
@@ -1526,23 +1587,24 @@
 					"name": "myLoans",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myLoans?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans?id=1",
 							"path": [
 								"myLoans"
 							],
@@ -1560,23 +1622,24 @@
 					"name": "myCards",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/myCards?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards?id=1",
 							"path": [
 								"myCards"
 							],
@@ -1599,12 +1662,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -1616,10 +1674,27 @@
 					"name": "contact",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
@@ -1630,18 +1705,93 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/register",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -1649,7 +1799,7 @@
 			"name": "Section_10",
 			"item": [
 				{
-					"name": "GetJWTToken",
+					"name": "myAccount",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -1661,7 +1811,7 @@
 								},
 								{
 									"key": "password",
-									"value": "12345",
+									"value": "EazyBytes@12345",
 									"type": "string"
 								}
 							]
@@ -1669,19 +1819,270 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/user",
-							"protocol": "http",
-							"host": [
-								"localhost"
+							"raw": "/myAccount?id=1",
+							"path": [
+								"myAccount"
 							],
-							"port": "8080",
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myBalance",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myBalance?id=1",
+							"path": [
+								"myBalance"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myLoans",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myLoans?id=1",
+							"path": [
+								"myLoans"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myCards",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "john@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/myCards?id=1",
+							"path": [
+								"myCards"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/notices",
+							"path": [
+								"notices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/contact",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/register",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
 							"path": [
 								"user"
 							]
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Section_11",
+			"item": [
 				{
 					"name": "myAccount",
 					"request": {
@@ -1692,17 +2093,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MjQ3MiwiZXhwIjoxNjkxMTcyNDcyfQ.ZZNg2zED1CfGP5_m5pngj4zehSgxfORgjkbcimzt7bk",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcyMDE5MDgyMSwiZXhwIjoxNzIwMjIwODIxfQ.4VoI3vnT0O3PU4rjseZpwwmjrPEobzuHHOSoSpYv0WM",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/myAccount?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myAccount?id=1",
 							"path": [
 								"myAccount"
 							],
@@ -1726,17 +2122,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcyMDE5MDgyMSwiZXhwIjoxNzIwMjIwODIxfQ.4VoI3vnT0O3PU4rjseZpwwmjrPEobzuHHOSoSpYv0WM",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/myBalance?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myBalance?id=1",
 							"path": [
 								"myBalance"
 							],
@@ -1760,17 +2151,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcyMDE5MDgyMSwiZXhwIjoxNzIwMjIwODIxfQ.4VoI3vnT0O3PU4rjseZpwwmjrPEobzuHHOSoSpYv0WM",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/myLoans?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myLoans?id=1",
 							"path": [
 								"myLoans"
 							],
@@ -1794,17 +2180,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY5MTE0MTE1NiwiZXhwIjoxNjkxMTcxMTU2fQ.u1ZpiweHBvqaQW3UOzO2ZeCf9MDoPXnQdQtQq6Wkc84",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/myCards?id=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/myCards?id=1",
 							"path": [
 								"myCards"
 							],
@@ -1827,12 +2208,294 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/notices",
-							"protocol": "http",
-							"host": [
-								"localhost"
+							"raw": "/notices",
+							"path": [
+								"notices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/contact",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/register",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apiLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"happy@example.com\",\n    \"password\": \"EazyBytes@54321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/apiLogin",
+							"path": [
+								"apiLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Section_12",
+			"item": [
+				{
+					"name": "myAccount",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myAccount?id=1",
+							"path": [
+								"myAccount"
 							],
-							"port": "8080",
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myBalance",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myBalance?id=1",
+							"path": [
+								"myBalance"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myLoans",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODgwNjQ0NCwiZXhwIjoxNzE4ODM2NDQ0fQ.eYmNefh26M3GtKAURjkDrGei4fs7-X6P-6jQztH1KAo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myLoans?id=1",
+							"path": [
+								"myLoans"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myCards",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myCards?id=1",
+							"path": [
+								"myCards"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/notices",
 							"path": [
 								"notices"
 							]
@@ -1847,10 +2510,15 @@
 							"type": "noauth"
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"contactName\": \"Madan Reddy\",\n    \"contactEmail\": \"tutor@eazybytes.com\",\n    \"subject\": \"Need a new saving account\",\n    \"message\": \"I want to open a new saving account in EazyBank\"\n}",
+							"raw": "[\n    {\n        \"contactName\": \"Test\",\n        \"contactEmail\": \"tutor@eazybytes.com\",\n        \"subject\": \"Need a new saving account\",\n        \"message\": \"I want to open a new saving account in EazyBank\"\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1858,84 +2526,184 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/contact",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
+							"raw": "/contact",
 							"path": [
 								"contact"
 							]
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "Section_13",
-			"item": [
+				},
 				{
-					"name": "1_GetAccessToken_ClientCredentials",
+					"name": "register",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "client_id",
-									"value": "eazybankapi",
-									"type": "text"
-								},
-								{
-									"key": "client_secret",
-									"value": "N9BSZoUmI0ondg2AmF1qnW1oOAmo8iWK",
-									"type": "text"
-								},
-								{
-									"key": "scope",
-									"value": "openid email profile address",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "client_credentials",
-									"type": "text"
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"mobileNumber\": \"4564747484\",\n    \"pwd\": \"EazyBytes@12345\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
-							"raw": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8180",
+							"raw": "/register",
 							"path": [
-								"realms",
-								"eazybankdev",
-								"protocol",
-								"openid-connect",
-								"token"
+								"register"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "2_InvokeResourceServerAPI_WithAccessToken",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
+					"name": "user",
 					"request": {
 						"auth": {
-							"type": "bearer",
-							"bearer": [
+							"type": "basic",
+							"basic": [
 								{
-									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1RGtMM190NUVLT2hkS1B6ZTA0VlA4ejdVbmhSb1hEMEo5UVNCcGc3OTFjIn0.eyJleHAiOjE2NzI1NDM2MDUsImlhdCI6MTY3MjU0MzMwNSwiYXV0aF90aW1lIjoxNjcyNTQzMjg3LCJqdGkiOiJkMGIzNGZhNi1kZmYzLTRmNTYtOWFjYi1lMmQwYzVkM2YzM2MiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgxODAvcmVhbG1zL2VhenliYW5rZGV2IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjJkNGJjNzcyLWI3NDgtNDg1ZC05OTllLWI2ZTc5ODVjMDRjNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImVhenliYW5rY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjkxMjk4MTg2LTdiZGEtNDQ4Ny04MmU3LTBmZmJiYmFhNzFmMyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsImRlZmF1bHQtcm9sZXMtZWF6eWJhbmtkZXYiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiOTEyOTgxODYtN2JkYS00NDg3LTgyZTctMGZmYmJiYWE3MWYzIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiRWF6eSBCeXRlcyIsInByZWZlcnJlZF91c2VybmFtZSI6ImVhenlieXRlcyIsImdpdmVuX25hbWUiOiJFYXp5IiwiZmFtaWx5X25hbWUiOiJCeXRlcyIsImVtYWlsIjoidHV0b3JAZWF6eWJ5dGVzLmNvbSJ9.AKeSHQw6VuZwFrv7Q6quTQ0MyZlLjxXVaFJPQhDy6cSIzfqxB4hTARHDK2yyozc6haeHZZ5WGaLLDsMui551iztIYsV13ICoXKFnak7ORFRZqGKRqfoWJXINM7cXSM2kUv92BxeWisvqbJmO33VjCZSB8FvO17UtKfQp-IG4ui4J3NOvzLyFE9ZOhvPo4bapo5O56TdV7iFv6aSNJtfpolEMkRiooPV32wIcCmdY1rdRCj4KlTVRL7LZE_ZBnD_EJ0PCDVu_hz3PkdUfjiXSvrySLXCHqvvOeTqJFE1u0FVWC9MuMQPdcMVUVGYnYBWcgkQT3Fouz8J2uCYARk-oBg",
+									"key": "username",
+									"value": "happy@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "EazyBytes@54321",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/user",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apiLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"happy@example.com\",\n    \"password\": \"EazyBytes@54321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/apiLogin",
+							"path": [
+								"apiLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Section_15",
+			"item": [
+				{
+					"name": "myAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "VxubZgAXyyTq9lGjj3qGvWNsHtE4SqTq",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankapi",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
 									"type": "string"
 								}
 							]
@@ -1944,14 +2712,321 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "",
-								"type": "text",
-								"disabled": true
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myAccount?email=happy@example.com",
+							"path": [
+								"myAccount"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myBalance",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "VxubZgAXyyTq9lGjj3qGvWNsHtE4SqTq",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankapi",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myBalance?email=happy@example.com",
+							"path": [
+								"myBalance"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myLoans",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "VxubZgAXyyTq9lGjj3qGvWNsHtE4SqTq",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankapi",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODgwNjQ0NCwiZXhwIjoxNzE4ODM2NDQ0fQ.eYmNefh26M3GtKAURjkDrGei4fs7-X6P-6jQztH1KAo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myLoans?email=happy@example.com",
+							"path": [
+								"myLoans"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myCards",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazypublicclient",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_with_pkce",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/auth",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myCards?email=happy@example.com",
+							"path": [
+								"myCards"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/notices",
+							"path": [
+								"notices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "[\n    {\n        \"contactName\": \"Eazy Bytes\",\n        \"contactEmail\": \"tutor@eazybytes.com\",\n        \"subject\": \"Need a new saving account\",\n        \"message\": \"I want to open a new saving account in EazyBank\"\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1959,19 +3034,387 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/myCards?email=tutor@eazybytes.com",
-							"protocol": "http",
-							"host": [
-								"localhost"
+							"raw": "/contact",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Section_16",
+			"item": [
+				{
+					"name": "myAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "openid USER ADMIN",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "VxubZgAXyyTq9lGjj3qGvWNsHtE4SqTq",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankapi",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:9000/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myAccount?email=happy@example.com",
+							"path": [
+								"myAccount"
 							],
-							"port": "8080",
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myBalance",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "Qw3rTy6UjMnB9zXcV2pL0sKjHn5TxQqB",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankclient",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:9000/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myBalance?email=happy@example.com",
+							"path": [
+								"myBalance"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myLoans",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazypublicclient",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:9000/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_with_pkce",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "openid email",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:9000/oauth2/authorize",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODgwNjQ0NCwiZXhwIjoxNzE4ODM2NDQ0fQ.eYmNefh26M3GtKAURjkDrGei4fs7-X6P-6jQztH1KAo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myLoans?email=happy@example.com",
+							"path": [
+								"myLoans"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happy@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myCards",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "openid USER ADMIN",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "VxubZgAXyyTq9lGjj3qGvWNsHtE4SqTq",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "eazybankapi",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:9000/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/auth",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AccessToken",
+									"type": "string"
+								},
+								{
+									"key": "state",
+									"value": "2fc61105-40ba-4b5f-8983-ec764ec4e437",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYXp5IEJhbmsiLCJzdWIiOiJKV1QgVG9rZW4iLCJ1c2VybmFtZSI6ImhhcHB5QGV4YW1wbGUuY29tIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImlhdCI6MTcxODczMDUwNiwiZXhwIjoxNzE4NzYwNTA2fQ.cShQCfCjzVV4GBha4uZlChlRsE8tTjDgJ4Q8sGrhKyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/myCards?email=happy@example.com",
 							"path": [
 								"myCards"
 							],
 							"query": [
 								{
 									"key": "email",
-									"value": "tutor@eazybytes.com"
+									"value": "happy@example.com"
 								}
 							]
 						}
@@ -1979,109 +3422,109 @@
 					"response": []
 				},
 				{
-					"name": "3_GetAuthCode_AuthCodeGrantFlow",
+					"name": "notices",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/auth?client_id=eazybankclient&response_type=code&scope=openid&redirect_uri=http://localhost:7080/sample&state=fdjgjfgdjhgffas",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8180",
+							"raw": "/notices",
 							"path": [
-								"realms",
-								"eazybankdev",
-								"protocol",
-								"openid-connect",
-								"auth"
-							],
-							"query": [
-								{
-									"key": "client_id",
-									"value": "eazybankclient"
-								},
-								{
-									"key": "response_type",
-									"value": "code"
-								},
-								{
-									"key": "scope",
-									"value": "openid"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "http://localhost:7080/sample"
-								},
-								{
-									"key": "state",
-									"value": "fdjgjfgdjhgffas"
-								}
+								"notices"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "4_GetAccessToken_AuthCodeGrantFlow",
+					"name": "contact",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "X-XSRF-TOKEN",
+								"value": "505f2ca2-58f9-472c-b3dc-33d4386dd6d9"
+							}
+						],
 						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "client_id",
-									"value": "eazybankclient",
-									"type": "text"
-								},
-								{
-									"key": "client_secret",
-									"value": "z8vr2kdeit3PSwJJKhJlciLqUToIHH8y",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "authorization_code",
-									"type": "text"
-								},
-								{
-									"key": "code",
-									"value": "ab1663a6-50b4-4370-bc3f-202ca2028f56.91298186-7bda-4487-82e7-0ffbbbaa71f3.e299c31f-de41-4ccf-a85e-dd4f85ae8bb3",
-									"type": "text"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "http://localhost:7080/sample",
-									"type": "text"
-								},
-								{
-									"key": "scope",
-									"value": "openid",
-									"type": "text"
+							"mode": "raw",
+							"raw": "[\n    {\n        \"contactName\": \"Eazy Bytes\",\n        \"contactEmail\": \"tutor@eazybytes.com\",\n        \"subject\": \"Need a new saving account\",\n        \"message\": \"I want to open a new saving account in EazyBank\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
-							"raw": "http://localhost:8180/realms/eazybankdev/protocol/openid-connect/token",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8180",
+							"raw": "/contact",
 							"path": [
-								"realms",
-								"eazybankdev",
-								"protocol",
-								"openid-connect",
-								"token"
+								"contact"
 							]
 						}
 					},
 					"response": []
 				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.request.url.protocol=\"http\";",
+					"pm.request.url.host=\"localhost\";",
+					"pm.request.url.port=\"8080\";"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080"
 		}
 	]
 }
