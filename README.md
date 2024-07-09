@@ -38,6 +38,7 @@
 - SQLECTRON website - https://sqlectron.github.io
 - Warp terminal website - https://www.warp.dev/
 - OAuth2 Website - https://oauth.net/2/
+- OAuth 2.1 Blog - https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1
 - OAuth2 playground - https://www.oauth.com/playground/
 - KeyCloak website - https://www.keycloak.org
 - KeyCloak Download page - https://www.keycloak.org/downloads
