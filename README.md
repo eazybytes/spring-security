@@ -12,7 +12,6 @@
 * Deep dive about encoding, encryption and hashing
 * What is CSRF, CORS and how to address them
 * What is Authentication and Authorization. How they are different from each other.
-* Securing endpoint URLs inside web applications using Ant, MVC & Regex Matchers
 * Filters in Spring Security and how to write own custom filters
 * Deep dive about JWT (JSON Web Tokens) and the role of them inside Authentication & Authorization
 * Deep dive about OAUTH2 and various grant type flows inside OAUTH2.
@@ -20,7 +19,7 @@
 * Applying authorization rules using roles, authorities inside a web application using Spring Security
 * Method level security in web/non-web applications
 * Social Login integrations into web applications
-* Set up of Authorization Server using KeyCloak 
+* Set up of Authorization Server using KeyCloak, Spring Authorization Server 
 
 ## Pre-requisite for the course
 - Good understanding on Java and Spring concepts
@@ -41,16 +40,15 @@
 - OAuth 2.1 Blog - https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1
 - OAuth2 playground - https://www.oauth.com/playground/
 - KeyCloak website - https://www.keycloak.org
-- KeyCloak Download page - https://www.keycloak.org/downloads
-- KeyCloak setup - https://www.keycloak.org/getting-started/getting-started-zip
 - KeyCloak guides - https://www.keycloak.org/guides
 - KeyCloak Well known APIs - http://localhost:8180/realms/eazybankdev/.well-known/openid-configuration
 - Angular Keycloak library - https://www.npmjs.com/package/keycloak-angular
 - Keycloak official documentation - https://www.keycloak.org/documentation
-- Keycloak Admin REST APIs - https://www.keycloak.org/docs-api/19.0.2/rest-api/index.html
+- Keycloak Admin REST APIs - https://www.keycloak.org/docs-api/latest/rest-api/index.html
 
 ## Commands used in the course
 
 |     Command       |     Description          |
 | ------------- | ------------- |
 | "docker run -p 3306:3306 --name springsecurity -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=eazybank -d mysql" | To create a MySQL DB container |
+| "docker run -p 8180:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:25.0.1 start-dev" | To create a Keycloak container |
