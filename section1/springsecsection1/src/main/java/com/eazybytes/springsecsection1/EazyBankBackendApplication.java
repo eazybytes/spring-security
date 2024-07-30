@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 // @ComponentScan("com.eazybytes.springsecsection1.controller")
 public class EazyBankBackendApplication {
-
+	//Initial Commit
 	public static void main(String[] args) {
 		SpringApplication.run(EazyBankBackendApplication.class, args);
 	}
