@@ -14,7 +14,7 @@ public class AuthorizationEvents {
     @EventListener
     public void onFailure(AuthorizationDeniedEvent deniedEvent) {
         log.error("Authorization failed for the user : {} due to : {}", deniedEvent.getAuthentication().get().getName(),
-                deniedEvent.getAuthorizationDecision().toString());
+                deniedEvent.getAuthorizationResult());
     }
 
 }
